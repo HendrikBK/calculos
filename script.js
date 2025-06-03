@@ -1,4 +1,4 @@
-let indexRomano = [
+var indexRomano = [
     [1000, "M"], // 0
     [900, "CM"], // 1
     [500, "D"],  // 2
@@ -19,13 +19,21 @@ function storeInput() {
     return numero;
 }
 
-function romano() {
-    let numero = storeInput();
-    let i = 0;
-    let numeroRomano;
-    while (numero > 0) {
-        if (numero > indexRomano[i][0]) {
-            numero
+function romano(numero) {
+    //let numero = storeInput();
+    var i = 0;
+    var numeroRomano = "";
+    if (numero > 3999 || numero < 0) {
+        console.log("Valor inválido! Informe um número inteiro entre 0 e 3999.");      
+    } else {
+        while (numero > 0) {
+            if (numero > indexRomano[i][0]) {
+                numero -= indexRomano[i][0];
+                numeroRomano = numeroRomano.concat(indexRomano[i][1]);
+            } else {
+                i++;
+            }
         }
     }
+    return numeroRomano;
 }
