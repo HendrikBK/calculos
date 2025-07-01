@@ -3,15 +3,57 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <title>ISSQN</title>
     </head>
     <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>Imposto de Renda</li>
+                    <li><a href="issqn.html"><abbr>ISSQN</abbr></a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2><abbr>ISSQN</abbr></h2>
         <form>
             <label for="valor">Valor</label>
             <input id="valor" type="number">
         </form>
-        <button id="calcular">Calcular</button>
-        <ul id="lista-issqn"></ul>        
+        <div class="button-container">
+            <button id="calcular">Calcular</button>
+        </div>
+        <table id="lista-issqn" style="visibility: hidden;">
+                <tr>
+                    <td>Valor Bruto</td>
+                    <td>R$</td>
+                </tr>
+                <tr>
+                    <td>Dedução</td>
+                    <td>R$</td>
+                </tr>
+                <tr>
+                    <td>Valor INSS</td>
+                    <td>R$</td>
+                </tr>
+                <tr>
+                    <td>Valor ISSQN</td>
+                    <td>R$</td>
+                </tr>
+                <tr>
+                    <td>Material</td>
+                    <td>R$</td>
+                </tr>
+                <tr>
+                    <td>Mão de obra</td>
+                    <td>R$</td>
+                </tr>
+                <tr>
+                    <td>Líquido</td>
+                    <td>R$</td>
+                </tr>
+        </table>
+        <!--<ul id="lista-issqn"></ul>        -->
     </body>
     <script src="script_issqn.js"></script>
 </html>

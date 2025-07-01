@@ -3,10 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <link rel="stylesheet" href="style.css">
         <title>Imposto de Renda</title>
     </head>
     <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>Imposto de Renda</li>
+                    <li><a href="issqn.html"><abbr>ISSQN</abbr></a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2>Imposto de Renda (<abbr>IRPF</abbr>)</h2>
         <form>
             <div>
                 <label for="receita">Receita</label>
@@ -15,9 +24,11 @@
             <div>
                 <label for="deducao">Despesa dedutível</label>
                 <input id="deducao" type="number">
-            </div>
-            <button id="calcular_ir">Calcular</button>
+            </div>    
         </form>
+        <div class="button-container">
+            <button id="calcular_ir">Calcular</button>
+        </div>
         <p id="resultado"></p>
     </body>
 

@@ -1,0 +1,68 @@
+/* Header */
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    margin-top: auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li + li,
+form > div + div {
+    margin-top: 1em;
+}
+
+#tela-inicial ul {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+}
+
+form{
+    margin: auto;
+    width: fit-content;
+
+}
+
+form > div {
+    text-align: right;
+    margin: auto;
+}
+
+form + div.button-container,
+p#resultado {
+    margin: 1em auto auto auto;
+    width: fit-content;
+}
+
+table#lista-issqn {
+    margin: 1.5em auto auto auto;
+    padding: 0;
+    width: fit-content;
+}
+
+table#lista-issqn tr td + td {
+    padding-left: 1em;
+}
+
+table#lista-issqn tr td:last-of-type {
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+}
