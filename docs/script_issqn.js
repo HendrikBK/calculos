@@ -5,7 +5,7 @@ function issqn_completo(valor_bruto=0) {
     } else {
         var aliquota_issqn = 0.035;
     }
-    valores[1] = valor_bruto * (0.3); // 1 Dedução
+    valores[1] = valor_bruto * (0.4); // 1 Dedução
     valores[2] = (valor_bruto - valores[1]) * (0.11); // 2 INSS
     valores[3] = valor_bruto * aliquota_issqn; // 3 ISSQN
     valores[4] = valor_bruto * 0.7; // 4 Material
@@ -27,7 +27,7 @@ function issqn_simples(valor_bruto=0) {
     } else {
         var aliquota_issqn = 0.035;
     }
-    valores[1] = valor_bruto * (0.3); // 1 Dedução
+    valores[1] = valor_bruto * (0.4); // 1 Dedução
     valores[2] = (valor_bruto - valores[1]) * (0.11); // 2 INSS
     valores[3] = valor_bruto * aliquota_issqn; // 3 ISSQN
     valores[4] = valor_bruto * 0.7; // 4 Material
@@ -83,19 +83,3 @@ function escreve_issqn(event) {
 }
 
 document.getElementById("calcular").addEventListener('click', escreve_issqn);
-
-/*
-function escreve_issqn(event) {
-    event.preventDefault();
-    let lista = document.getElementById("lista-issqn");
-    valores = issqn(document.getElementById("valor").value);
-    let i;
-    for (i=0; i < 7; i++) {    
-        let item = document.createElement('li');
-        item.innerHTML = valores[i].toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-        lista.appendChild(item);
-    }
-}
-
-document.getElementById("calcular").addEventListener('click', escreve_issqn);
-*/
