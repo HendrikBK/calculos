@@ -1,0 +1,60 @@
+:root {
+    --letters: #000000;
+    --background: #ffffff;
+    --element: #3737ee;
+}
+
+header {
+    background-color: var(--element);
+    padding: 1em 0 1em 0;
+    margin: auto;
+}
+
+header li {    
+    color: var(--background);
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+#ir tr td:second-of-type {
+    border: none;
+}
+
+button {
+    background-color: var(--element);
+    border-radius: 10%;
+    padding: 0.5em 1em 0.5em 1em;
+    border-bottom: solid black 2px;
+    border-right: solid black 2px;
+    border-left: solid var(--element) 1px;
+    border-top: solid var(--element) 1px;
+    color: var(--background);
+}
+
+button:active {
+    border-bottom: solid var(--element) 1px;
+    border-right: solid var(--element) 1px;
+    border-left: solid black 2px;
+    border-top: solid black 2px;
+}
+
+button:focus {
+    outline: 1px dotted #000000;
+    outline-offset: -3px;
+}
+
+[id^=lista-issqn] td {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}

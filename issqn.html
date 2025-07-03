@@ -4,56 +4,94 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-azul.css">
         <title>ISSQN</title>
     </head>
     <body>
         <header>
             <nav>
                 <ul>
-                    <li>Imposto de Renda</li>
-                    <li><a href="issqn.html"><abbr>ISSQN</abbr></a></li>
+                    <li><a href="ir.html">Imposto de Renda</a></li>
+                    <li><abbr title="Imposto sobre serviços de qualquer natureza">ISSQN</abbr></li>
                 </ul>
             </nav>
         </header>
-        <h2><abbr>ISSQN</abbr></h2>
+        <h2><abbr title="Imposto sobre serviços de qualquer natureza">ISSQN</abbr></h2>
         <form>
-            <label for="valor">Valor</label>
-            <input id="valor" type="number">
+            <div>
+                <label for="valor">Valor</label>
+                <input id="valor" type="number">
+            </div>
+            <div>
+                <label for="aliquota-issqn">Alíquota</label>
+                <input id="aliquota-issqn" placeholder="3,5%" type="number">
+            </div>
+            <div>
+                <label for="checkbox">Simples</label>
+                <input id="checkbox" name="simples" type="checkbox" value="true">
+            </div>
         </form>
         <div class="button-container">
             <button id="calcular">Calcular</button>
         </div>
-        <table id="lista-issqn" style="visibility: hidden;">
+        <table id="lista-issqn-simples" style="display: none;">
                 <tr>
                     <td>Valor Bruto</td>
-                    <td>R$</td>
                 </tr>
                 <tr>
                     <td>Dedução</td>
-                    <td>R$</td>
                 </tr>
                 <tr>
-                    <td>Valor INSS</td>
-                    <td>R$</td>
+                    <td>Valor <abbr title="Instituto Nacional do Seguro Social">INSS</abbr></td>
                 </tr>
                 <tr>
-                    <td>Valor ISSQN</td>
-                    <td>R$</td>
+                    <td>Valor <abbr title="Imposto sobre serviços de qualquer natureza">ISSQN</td>
                 </tr>
                 <tr>
                     <td>Material</td>
-                    <td>R$</td>
                 </tr>
                 <tr>
                     <td>Mão de obra</td>
-                    <td>R$</td>
                 </tr>
                 <tr>
                     <td>Líquido</td>
-                    <td>R$</td>
                 </tr>
         </table>
-        <!--<ul id="lista-issqn"></ul>        -->
+        <table id="lista-issqn-completo" style="display: none;">
+                <tr>
+                    <td>Valor Bruto</td>
+                </tr>
+                <tr>
+                    <td>Dedução</td>
+                </tr>
+                <tr>
+                    <td>Valor <abbr title="Instituto Nacional do Seguro Social">INSS</abbr></td>
+                </tr>
+                <tr>
+                    <td>Valor <abbr title="Imposto sobre serviços de qualquer natureza">ISSQN</abbr></td>
+                </tr>
+                <tr>
+                    <td>Material</td>
+                </tr>
+                <tr>
+                    <td>Mão de obra</td>
+                </tr>
+                <tr>
+                    <td><abbr title="Programa de Integração Social">PIS</abbr></td>
+                </tr>
+                <tr>
+                    <td><abbr title="Contribuição para Financiamento da Seguridade Social">COFINS</abbr></td>
+                </tr>                
+                <tr>
+                    <td><abbr title="Imposto de renda retido na fonte">IRRF</abbr></td>
+                </tr>
+                <tr>
+                    <td><abbr title="Contribição social sobre o lucro líquido">CSSL</abbr></td>
+                </tr>
+                <tr>
+                    <td>Líquido</td>
+                </tr>
+        </table>
     </body>
     <script src="script_issqn.js"></script>
 </html>
