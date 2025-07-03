@@ -82,3 +82,9 @@ form > div > label {
     font-variant-numeric: tabular-nums;
     text-align: right;
 }
+
+abbr[title] {     
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
