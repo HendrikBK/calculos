@@ -46,7 +46,7 @@ function limpar() {
 }
 
 function change_visibility(){
-    if  (document.getElementById("checkbox").checked) {//(document.getElementById("simples").value) {
+    if  (document.getElementById("checkbox").checked) {
         document.getElementById("lista-issqn-simples").style.display = 'block';
         document.getElementById("lista-issqn-completo").style.display = 'none';
     } else {
@@ -59,7 +59,7 @@ function escreve_issqn(event) {
     change_visibility();
     event.preventDefault();
     limpar();
-    if (document.getElementById("checkbox").checked){//(document.getElementById("simples").value) {
+    if (document.getElementById("checkbox").checked){
         valores = issqn_simples(document.getElementById("valor").value);
         let i;
         for (i=0; i < 7; i++) {
