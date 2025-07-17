@@ -5,9 +5,9 @@ function issqn_completo(valor_bruto=0) {
     } else {
         var aliquota_issqn = 0.035;
     }
-    valores[1] = valor_bruto * (0.4); // 1 Dedução
-    valores[2] = (valor_bruto - valores[1]) * (0.11); // 2 INSS
-    valores[3] = valor_bruto * aliquota_issqn; // 3 ISSQN
+    valores[1] = valor_bruto * 0.4; // 1 Dedução
+    valores[2] = (valor_bruto * 0.3) * 0.11; // 2 INSS
+    valores[3] = (valor_bruto - valores[1]) * aliquota_issqn; // 3 ISSQN
     valores[4] = valor_bruto * 0.7; // 4 Material
     valores[5] = valor_bruto * 0.3; // 5 Mão de obra
     valores[6] = valor_bruto * 0.0065; // 6 PIS
@@ -28,8 +28,8 @@ function issqn_simples(valor_bruto=0) {
         var aliquota_issqn = 0.035;
     }
     valores[1] = valor_bruto * (0.4); // 1 Dedução
-    valores[2] = (valor_bruto - valores[1]) * (0.11); // 2 INSS
-    valores[3] = valor_bruto * aliquota_issqn; // 3 ISSQN
+    valores[2] = (valor_bruto * 0.3) * 0.11; // 2 INSS
+    valores[3] = (valor_bruto - valores[1]) * aliquota_issqn; // 3 ISSQN
     valores[4] = valor_bruto * 0.7; // 4 Material
     valores[5] = valor_bruto * 0.3; // 5 Mão de obra
     valores[6] = valor_bruto - valores[2] - valores[3]; // 6 Valor líquido
