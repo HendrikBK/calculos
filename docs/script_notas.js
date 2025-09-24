@@ -171,7 +171,6 @@ function exibir_segmentos() {
     let i;
     let j;
     let segmentos_exibidos = document.getElementsByClassName("segmento_th");
-    console.log(segmentos_exibidos.length);
     if (segmentos.length > 0 && segmentos.length >= segmentos_exibidos.length ) {
         document.getElementById("lista-segmentos").style.display = 'block';
 
