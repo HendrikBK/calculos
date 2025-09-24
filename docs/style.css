@@ -45,7 +45,7 @@ form > div {
     margin: 1em auto auto auto;
 }
 
-form > div:last-of-type {
+#issqn form > div:last-of-type {
     text-align: center;
     margin: 1em auto auto auto;
 }
@@ -87,4 +87,82 @@ abbr[title] {
   border-bottom: none !important;
   cursor: inherit !important;
   text-decoration: none !important;
+}
+
+/* CFOP */
+
+#cfop table {
+    margin: auto;
+}
+
+#cfop thead tr th {
+    text-align: left;
+}
+
+#cfop tr td:first-of-type,
+#cfop tr th:first-of-type {
+    padding-left: 0;
+    padding-right: 0.5em;
+}
+
+#cfop tr td,
+#cfop tr th {
+    padding-left: 0.5em;
+}
+
+/* Cálculo notas */
+
+#notas p#resultado-calculo-simples {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#notas main {
+    display: flex;
+}
+
+#notas div#form-div,
+#notas div#table-div {
+    max-width: 48%;
+}
+
+#notas div#form-div {
+    padding-left: 1.5em;
+}
+
+#notas div#table-div {
+    padding: 1.5em;
+}
+
+#notas button {
+    padding: 0.2em 0.3em 0.2em 0.3em;
+}
+
+#notas table {
+    margin: auto;
+    padding-left: 1.5em;
+    border-collapse: collapse;
+}
+
+#notas thead tr th {
+    border: solid rgb(204, 204, 204) 1px;
+}
+
+#notas tbody td:first-of-type {
+    text-align: left;
+    padding-right: 2em;
+}
+
+#notas tbody td {
+    border: solid rgb(204, 204, 204) 1px;
+    text-align: right;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+}
+
+#notas tbody tr:first-of-type td {
+    font-weight: bold;
+}
+
+#notas div#botao {
+    text-align: center;
 }

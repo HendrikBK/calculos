@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Página para cálculo de ISSQN.">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-azul.css">
+        <title>Notas</title>
+    </head>
+    <body id="notas">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="ir.html">Imposto de Renda</a></li>
+                    <li><a href="issqn.html"><abbr title="Imposto sobre serviços de qualquer natureza">ISSQN</abbr></a></li>
+                    <li>Notas</li>
+                </ul>
+            </nav>
+        </header>
+        <h2>Notas</h2>
+        <main>
+            <div id="form-div">
+                <form id="dados">
+                    <div>
+                        <label for="total">Total</label>
+                        <input id="total" type="number">
+                        <button id="calcular-total">Calcular</button>
+                    </div>
+                    <div>
+                        <label for="produtos">Produtos</label>
+                        <input id="produtos" type="number">
+                        <button id="calcular-produtos">Calcular</button>
+                    </div>
+                    <div>
+                        <label for="frete">Frete</label>
+                        <input id="frete" type="number">
+                        <button id="calcular-frete">Calcular</button>
+                    </div>
+                    <div>
+                        <label for="seguro">Seguro</label>
+                        <input id="seguro" type="number">
+                        <button id="calcular-seguro">Calcular</button>
+                    </div>
+                    <div>
+                        <label for="despesas-acessorias">Despesas Acessórias</label>
+                        <input id="despesas-acessorias" type="number">
+                        <button id="calcular-despesas-acessorias">Calcular</button>
+                    </div>
+                    <div>
+                        <label for="desconto">Desconto</label>
+                        <input id="desconto" type="number">
+                        <button id="calcular-desconto">Calcular</button>
+                    </div>
+                    <div>
+                        <label for="pedagio">Pedágio</label>
+                        <input id="pedagio" type="number">
+                        <button id="calcular-pedagio">Calcular</button>
+                    </div>
+                    <div>
+                        <label for="ipi"><abbr>IPI</abbr></label>
+                        <input id="ipi" type="number">
+                        <button id="calcular-ipi">Calcular</button>
+                    </div>
+                    <div>
+                        <label for="icms-st"><abbr>ICMS-ST</abbr></label>
+                        <input id="icms-st" type="number">
+                        <button id="calcular-icms-st">Calcular</button>
+                    </div>
+                    <div id="botao">
+                        <button id="novo-segmento">Novo segmento</button>
+                    </div>
+                </form>
+                <p id="resultado-calculo-simples"></p>
+            </div>
+            <div id="table-div">
+                <table id="lista-segmentos" style="display: none;">
+                    <thead>
+                        <tr id="row-th">
+                            <th>Segmento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row">
+                            <td>Total</td>
+                        </tr>
+                        <tr class="row">
+                            <td>Produtos</td>
+                        </tr>
+                        <tr class="row">
+                            <td>Frete</td>
+                        </tr>
+                        <tr class="row">
+                            <td>Seguro</td>
+                        </tr>
+                        <tr class="row">
+                            <td>Despesas Acessórias</td>
+                        </tr>
+                        <tr class="row">
+                            <td>Desconto</td>
+                        </tr>
+                        <tr class="row">
+                            <td>Pedágio</td>
+                        </tr>
+                        <tr class="row">
+                            <td>IPI</td>
+                        </tr>
+                        <tr class="row">
+                            <td>ICMS-ST</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>        
+    </body>
+    <script src="script_notas.js"></script>
+</html>
